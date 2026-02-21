@@ -1,0 +1,106 @@
+{
+  "hash": "b96a5f60",
+  "configHash": "ac8f8ca7",
+  "lockfileHash": "af04fa82",
+  "browserHash": "3f8ccf9a",
+  "optimized": {
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "5a9cac0e",
+      "needsInterop": true
+    },
+    "react-dom": {
+      "src": "../../node_modules/react-dom/index.js",
+      "file": "react-dom.js",
+      "fileHash": "8dd90fb7",
+      "needsInterop": true
+    },
+    "react/jsx-dev-runtime": {
+      "src": "../../node_modules/react/jsx-dev-runtime.js",
+      "file": "react_jsx-dev-runtime.js",
+      "fileHash": "c98b9998",
+      "needsInterop": true
+    },
+    "react/jsx-runtime": {
+      "src": "../../node_modules/react/jsx-runtime.js",
+      "file": "react_jsx-runtime.js",
+      "fileHash": "60ae6157",
+      "needsInterop": true
+    },
+    "@react-three/drei": {
+      "src": "../../node_modules/@react-three/drei/index.js",
+      "file": "@react-three_drei.js",
+      "fileHash": "6aa5c531",
+      "needsInterop": false
+    },
+    "@react-three/fiber": {
+      "src": "../../node_modules/@react-three/fiber/dist/react-three-fiber.esm.js",
+      "file": "@react-three_fiber.js",
+      "fileHash": "68c1ce8a",
+      "needsInterop": false
+    },
+    "framer-motion": {
+      "src": "../../node_modules/framer-motion/dist/es/index.mjs",
+      "file": "framer-motion.js",
+      "fileHash": "04eaab94",
+      "needsInterop": false
+    },
+    "gsap": {
+      "src": "../../node_modules/gsap/index.js",
+      "file": "gsap.js",
+      "fileHash": "0c7edf57",
+      "needsInterop": false
+    },
+    "gsap/ScrollTrigger": {
+      "src": "../../node_modules/gsap/ScrollTrigger.js",
+      "file": "gsap_ScrollTrigger.js",
+      "fileHash": "461416fc",
+      "needsInterop": false
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "1d808c5b",
+      "needsInterop": true
+    },
+    "react-parallax-tilt": {
+      "src": "../../node_modules/react-parallax-tilt/dist/modern/index.js",
+      "file": "react-parallax-tilt.js",
+      "fileHash": "1fcdbc0c",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "hls-2PAO3BKI": {
+      "file": "hls-2PAO3BKI.js"
+    },
+    "vision_bundle-TBY4AZ3O": {
+      "file": "vision_bundle-TBY4AZ3O.js"
+    },
+    "chunk-TXGQJFWJ": {
+      "file": "chunk-TXGQJFWJ.js"
+    },
+    "chunk-7IFQFWCS": {
+      "file": "chunk-7IFQFWCS.js"
+    },
+    "chunk-JBIJKIOV": {
+      "file": "chunk-JBIJKIOV.js"
+    },
+    "chunk-7DMKANV4": {
+      "file": "chunk-7DMKANV4.js"
+    },
+    "chunk-SZZZMFBH": {
+      "file": "chunk-SZZZMFBH.js"
+    },
+    "chunk-6YOVXODW": {
+      "file": "chunk-6YOVXODW.js"
+    },
+    "chunk-VX2H6PUQ": {
+      "file": "chunk-VX2H6PUQ.js"
+    },
+    "chunk-G3PMV62Z": {
+      "file": "chunk-G3PMV62Z.js"
+    }
+  }
+}
