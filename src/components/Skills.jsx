@@ -1,5 +1,33 @@
 import { motion } from "framer-motion";
 import { skillCategories } from "../constants";
+import {
+    FaBootstrap,
+    FaChartArea,
+    FaChartBar,
+    FaChartLine,
+    FaChartPie,
+    FaCode,
+    FaCodeBranch,
+    FaCss3Alt,
+    FaCubes,
+    FaDatabase,
+    FaDesktop,
+    FaHtml5,
+    FaJava,
+    FaNetworkWired,
+    FaNodeJs,
+    FaPython,
+    FaReact,
+} from "react-icons/fa";
+import {
+    SiExpress,
+    SiJavascript,
+    SiMongodb,
+    SiNumpy,
+    SiPandas,
+    SiR,
+    SiScikitlearn,
+} from "react-icons/si";
 
 const skillAccentOverrides = {
     "#3572a5": "#60A5FA",
@@ -9,6 +37,37 @@ const skillAccentOverrides = {
 const getSkillAccent = (color) => {
     const key = color.toLowerCase();
     return skillAccentOverrides[key] || color;
+};
+
+const skillIcons = {
+    Python: FaPython,
+    Java: FaJava,
+    JavaScript: SiJavascript,
+    R: SiR,
+    HTML: FaHtml5,
+    CSS: FaCss3Alt,
+    Bootstrap: FaBootstrap,
+    React: FaReact,
+    "Node.js": FaNodeJs,
+    "Express.js": SiExpress,
+    MongoDB: SiMongodb,
+    SQL: FaDatabase,
+    "Data Science": FaChartBar,
+    "Machine Learning": SiScikitlearn,
+    Pandas: SiPandas,
+    NumPy: SiNumpy,
+    Matplotlib: FaChartLine,
+    Seaborn: FaChartArea,
+    "Power BI": FaChartPie,
+    "DSA (Data Structures & Algorithms)": FaCodeBranch,
+    "OOP (Object-Oriented Programming)": FaCubes,
+    DBMS: FaDatabase,
+    "OS (Operating Systems)": FaDesktop,
+    "CN (Computer Networks)": FaNetworkWired,
+};
+
+const getSkillIcon = (skill) => {
+    return skillIcons[skill] || FaCode;
 };
 
 export default function Skills() {
@@ -65,7 +124,10 @@ export default function Skills() {
 
                                 {/* Skills list */}
                                 <div className="flex flex-wrap gap-2.5">
-                                    {cat.skills.map((skill, si) => (
+                                    {cat.skills.map((skill, si) => {
+                                        const SkillIcon = getSkillIcon(skill);
+
+                                        return (
                                         <motion.span
                                             key={skill}
                                             initial={{ opacity: 0, scale: 0.85 }}
@@ -73,16 +135,18 @@ export default function Skills() {
                                             viewport={{ once: true }}
                                             transition={{ duration: 0.3, delay: ci * 0.06 + si * 0.04 }}
                                             whileHover={{ scale: 1.06, y: -2 }}
-                                            className="px-3 sm:px-4 py-1.5 rounded-full text-xs sm:text-sm font-medium cursor-default max-w-full break-words"
+                                            className="inline-flex items-center gap-1.5 px-3 sm:px-4 py-1.5 rounded-full text-xs sm:text-sm font-medium cursor-default max-w-full break-words"
                                             style={{
                                                 background: `${accent}22`,
                                                 border: `1px solid ${accent}75`,
                                                 color: accent,
                                             }}
                                         >
-                                            {skill}
+                                            <SkillIcon className="text-sm shrink-0" aria-hidden />
+                                            <span>{skill}</span>
                                         </motion.span>
-                                    ))}
+                                        );
+                                    })}
                                 </div>
                             </motion.div>
                         );
