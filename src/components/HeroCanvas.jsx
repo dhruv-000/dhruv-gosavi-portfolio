@@ -46,7 +46,7 @@ export default function HeroVisual() {
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.8, ease: [0.34, 1.56, 0.64, 1] }}
                 {...floatAnim([0, -12, 0], 4)}
-                className="relative w-52 h-52 rounded-3xl overflow-hidden z-10"
+                className="relative w-52 rounded-3xl overflow-hidden z-10"
                 style={{
                     background: "rgba(255,255,255,0.04)",
                     backdropFilter: "blur(20px)",
@@ -59,7 +59,7 @@ export default function HeroVisual() {
                     alt="Portrait of Dhruv Gosavi"
                     loading="eager"
                     decoding="async"
-                    className="w-full h-full object-cover object-top"
+                    className="block w-full h-auto"
                 />
                 {/* Name overlay */}
                 <div className="absolute bottom-0 left-0 right-0 p-3"

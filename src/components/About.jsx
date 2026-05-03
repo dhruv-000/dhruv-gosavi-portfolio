@@ -41,13 +41,13 @@ export default function About() {
                         {/* Photo */}
                         <div className="relative inline-block w-full max-w-sm mx-auto lg:mx-0">
                             <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-accent/30 to-accentPurple/30 blur-2xl scale-110 pointer-events-none" />
-                            <div className="relative rounded-2xl overflow-hidden neon-border aspect-square bg-[#0a0a1a]">
+                            <div className="relative rounded-2xl overflow-hidden neon-border bg-[#0a0a1a]">
                                 <img
                                     src={profileImageUrl}
                                     alt="Portrait of Dhruv Gosavi"
                                     loading="lazy"
                                     decoding="async"
-                                    className="w-full h-full object-cover object-top"
+                                    className="block w-full h-auto"
                                 />
                                 <div className="absolute top-3 left-3 w-6 h-6 border-t-2 border-l-2 border-accent rounded-tl" />
                                 <div className="absolute top-3 right-3 w-6 h-6 border-t-2 border-r-2 border-accentPurple rounded-tr" />
